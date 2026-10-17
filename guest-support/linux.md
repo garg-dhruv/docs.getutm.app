@@ -150,6 +150,8 @@ Now add another entry to `/etc/fstab`:
 /mnt/utm /home/user/utm fuse.bindfs map=502/1000:@20/@1000,x-systemd.requires=/mnt/utm,_netdev,nofail,auto 0 0
 ```
 
+_Note_: `bindfs` needs to be installed for this to work.
+
 An alternative solution is to recursively change the permissions of the files in your shared folder:
 
 ```
